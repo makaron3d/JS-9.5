@@ -1,4 +1,3 @@
-// test code
 var a = prompt ('add a');
 var b = prompt ('add b');
 var value = (a * a) + (2 * a * b) + (b + b);
