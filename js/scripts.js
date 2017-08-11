@@ -1,10 +1,18 @@
 // test code
 var a = 3;
-var h = 6;
-var triangleArea = a * h / 2;
-alert("Pole trójkąta to " + triangleArea + " cm kw.");
-console.log('Triangle field with base a: ' + a + ' and height h: ' + h + ' is equal to: ' + triangleArea);
+var b = 6;
+var value = (a * a) + (2 * a * b) + (b + b);
 
+alert('Wynik działania: ' + value);
+console.log('Wynik działania matematycznego: ' + value);
+
+if (value > 0) {
+    alert('Liczba dodatnia: ' + value);
+} else if (value < 0) {
+    alert('Liczba ujemna: ' + value);
+} else {
+    alert('Wynik to: ' + value);
+}
 
 /*var age = prompt('Enter your age');
 alert('Masz ' + age + ' lat!' );
