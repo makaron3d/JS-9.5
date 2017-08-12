@@ -1,18 +1,22 @@
 var a = prompt('add a');
-var b = prompt('add b');
-var value = (a * a) + (2 * a * b) + (b + b);
+var h = prompt('add h');
 
-alert('Wynik działania: ' + value);
-console.log('Wynik działania matematycznego: ' + value);
 
-if (value > 0) {
-    alert('Liczba dodatnia: ' + value);
-} else if (value < 0) {
-    alert('Liczba ujemna: ' + value);
-} else {
-    alert('Wynik to: ' + value);
+
+function getTriangleArea(a, h) {
+    if ((a > 0) && (h > 0)) {
+        return (a * h / 2);
+    } else {
+        return alert('Nieprawidłowe dane!');
+    }
+    
+    
 }
 
-/*var age = prompt('Enter your age');
-alert('Masz ' + age + ' lat!' );
-console.log('Hello, '); */
+alert(getTriangleArea(a, h));
+console.log(getTriangleArea(-2, 7));
+console.log(getTriangleArea(10, 15));
+console.log(getTriangleArea(16, 33));
+console.log(getTriangleArea(10, 15));
+console.log(getTriangleArea(-2, 7));
+
