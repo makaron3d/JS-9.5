@@ -1,22 +1,13 @@
-var a = prompt('add a');
-var h = prompt('add h');
+var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
+var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
+var allNames = maleNames.concat(femaleNames);
 
+console.log(allNames);
 
+var newName = 'Maja';
 
-function getTriangleArea(a, h) {
-    if ((a > 0) && (h > 0)) {
-        return (a * h / 2);
-    } else {
-        return alert('Nieprawidłowe dane!');
-    }
-    
-    
+if (allNames.indexOf(newName) === -1) {
+    var newName = allNames.push(newName);
+    console.log(allNames);
 }
-
-alert(getTriangleArea(a, h));
-console.log(getTriangleArea(-2, 7));
-console.log(getTriangleArea(10, 15));
-console.log(getTriangleArea(16, 33));
-console.log(getTriangleArea(10, 15));
-console.log(getTriangleArea(-2, 7));
 
