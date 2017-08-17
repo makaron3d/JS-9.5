@@ -1,9 +1,10 @@
-function drawTree(i < 8) {
-    for (var i = 0; i++) {
-        var star = (); 
-        for (var j = 0; j < 8; j++) {
-            var star += '*';  
+var HTMLButtonElement = document.getElementsByClassName('button');
+console.log(HTMLButtonElement);
+var buttonsNumber = HTMLButtonElement.length;
+var buttonText = HTMLButtonElement.innerText;
+
+    for (var i = 0; i < buttonsNumber; i++) {
+        console.log(HTMLButtonElement + i);
+        console.log(buttonText);
         }
-        console.log(star);
-    }
-}
+
